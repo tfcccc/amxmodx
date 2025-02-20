@@ -448,7 +448,7 @@ int	C_Spawn(edict_t *pent)
 	ke::SafeSprintf(temporaryMap, sizeof(temporaryMap), "%s", STRING(gpGlobals->mapname));
 
 	prefixed_map_pluginsfile[0] = '\0';
-	if ((tmap_ptr = strchr(temporaryMap, '_')) != NULL)
+	if(false) //if ((tmap_ptr = strchr(temporaryMap, '_')) != NULL)
 	{
 		// this map has a prefix
 
